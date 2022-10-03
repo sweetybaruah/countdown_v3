@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.hidden{
+    display: none;
+}
+
+.container{
+    position: relative;
+    background: url('images/bg1.jpg') no-repeat;
+    width: 300px;
+    height: 250px;
+}
+
+.clockdesign1{
+    background: url('images/clock/yellow.png') no-repeat;
+    position: absolute;
+    width: 103px ;
+    height: 103px;
+    top: 16px;
+    left: 9px;
+    z-index: 1;
+}
+
+.clockdesign1_1{
+    background: url('images/clock/yellow.png') no-repeat;
+    position: absolute;
+    width: 103px ;
+    height: 103px;
+    top: 48px;
+    left: 9px;
+    z-index: 1;
+}
+
+.clockdesign2{
+    position: absolute;
+    width: 67px ;
+    height: 67px;
+    top: 33px;
+    left: 33px;
+    z-index: 1; 
+}
+
+.clockdesign2_1{
+    position: absolute;
+    width: 67px ;
+    height: 67px;
+    top: 67px;
+    left: 29px;
+    z-index: 1;
+}
+.clockdesign3{
+    position: absolute;
+    width: 90px ;
+    height: 90px;
+    top: 25px;
+    left: 26px;
+    z-index: 1;
+}
+
+.clockdesign3_1{
+    position: absolute;
+    width: 90px ;
+    height: 90px;
+    top: 59px;
+    left: 22px;
+    z-index: 1;
+}
+
+.clockdesign4{
+    position: absolute;
+    width: 48px ;
+    height: 47px;
+    top: 31px;
+    left: 13px;
+    z-index: 1;
+}
+
+.clockdesign4_1{
+    position: absolute;
+    width: 48px ;
+    height: 47px;
+    top: 64px;
+    left: 11px;
+    z-index: 1;
+}
+
+.element1{
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    top: 0;
+    left: 0;
+}
+
+.element1_1{
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    top: 27px;
+    left: 0;
+}
+
+.element2{
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    top: 0;
+    left: 0;
+}
+
+.element2_1{
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    top: 25px;
+    left: 0;
+}
+
+.element3{
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    top: 0;
+    left: 0;
+}
+
+.element3_1{
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    top: 30px;
+    left: 0;
+}
+
+.section2{
+    overflow: hidden;
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    top: 0;
+    left: 0;
+}
+
+.section2_1{
+    overflow: hidden;
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    top: 0;
+    left: 0;
+}
+
+
+.section3{
+    overflow: hidden;
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    top: 0;
+    left: -50px;  
+}
+
+.section3_1{
+    overflow: hidden;
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    top: 30px;
+    /* left: -50px; */
+}
+
+.element4{
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    top: 0;
+    left: 0;
+}
+.timer{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.hour{
+    position: absolute;
+    top: 183px;
+    left: 66px;
+    /* font-size: 20px; */
+    font-style: bold;
+}
+
+.min{
+    position: absolute;
+    top: 183px;
+    left: 135px;
+}
+
+.sec{
+    position: absolute;
+    top: 183px;;
+    left: 211px;
+}
+
+.tab{
+    position: absolute;
+    width: 167px;
+    height: 34px;
+    top: 193px;
+    left: 64px;
+}
+
+.pluse{
+    -webkit-animation-name: pluse;
+            animation-name: pluse;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+@-webkit-keyframes pluse{
+    0%,100%{
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    50%{
+        -webkit-transform: scale(.90);
+                transform: scale(.90);
+    }
+}
+@keyframes pluse{
+    0%,100%{
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    50%{
+        -webkit-transform: scale(.90);
+                transform: scale(.90);
+    }
+}
+
+
+.circle{
+    position: absolute;
+    -webkit-animation: circle 1s linear;
+            animation: circle 1s linear;
+}
+
+@-webkit-keyframes circle{
+    to{
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+  }
+
+@keyframes circle{
+    to{
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+  }
+
+  .slide{
+    -webkit-animation: slide 1s linear forwards;
+            animation: slide 1s linear forwards;
+    overflow: hidden;
+  }
+
+  @-webkit-keyframes slide{
+   20%{
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+   }
+   100%{
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
+   }
+
+  }
+
+  @keyframes slide{
+   20%{
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+   }
+   100%{
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
+   }
+
+  }
+
+  .fadeIn{
+    -webkit-animation: fadeIn 1s ease forwards;
+            animation: fadeIn 3s ease forwards;
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+    overflow: hidden;
+  }
+
+  @-webkit-keyframes fadeIn{
+    0%{
+        transform: scale(0.5) translateX(20%);
+    }
+    50%{
+        transform: scale(1.5) translateX(80%);
+        /* opacity: .5; */
+    }
+    100%{
+        transform: scale(2.5) translateX(100%);
+        transition: 2s;
+    }
+  }
+
+  @keyframes fadeIn{
+    10%{
+        opacity: .5;
+    }
+  }
+
+
